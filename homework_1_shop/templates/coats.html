@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Куртки
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <ul class="nav nav-pills justify-content-end align-items-end">
+            <li class="nav-item"><a href="/clothes/"
+                                    class="nav-link">Вернуться назад</a></li>
+        </ul>
+    </div>
+    <h1>КУРТКИ</h1>
+    <img src="/static/image/coat.jpg">
+    {% for coat in coats %}
+        <h3>{{ coat.color }}</h3>
+        <h4>Цена: {{ coat.price }}</h4>
+        <p>Размер: {{ coat.size }}</p>
+    {% endfor %}
+{% endblock %}
+

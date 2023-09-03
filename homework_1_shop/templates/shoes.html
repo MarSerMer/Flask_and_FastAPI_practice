@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Обувь
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <ul class="nav nav-pills justify-content-end align-items-end">
+            <li class="nav-item"><a href="/clothes/"
+                                    class="nav-link">Вернуться назад</a></li>
+        </ul>
+    </div>
+    <h1>ОБУВЬ</h1>
+    <img src="/static/image/shoes.jpg">
+    {% for shoe in shoes %}
+        <h3>{{ shoe.type }}</h3>
+        <h4>Цена: {{ shoe.price }}</h4>
+        <p>Размер: {{ shoe.size }}</p>
+    {% endfor %}
+{% endblock %}

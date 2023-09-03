@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Каталог
+{% endblock %}
+
+{% block content %}
+<h1 class="col-12 col-md-6 display-2">Основной каталог</h1>
+<div class="container-fluid">
+    <ul class="nav nav-pills justify-content-end align-items-end">
+        <li class="nav-item"><a href="/base/"
+                                class="nav-link">Вернуться на главную</a></li>
+        <li class="nav-item"><a href="/coats/"
+                                class="nav-link">Куртки</a></li>
+        <li class="nav-item"><a href="/shoes/"
+                                class="nav-link">Обувь</a></li>
+    </ul>
+</div>
+<img src="/static/image/clothes.jpg">
+{% endblock %}
