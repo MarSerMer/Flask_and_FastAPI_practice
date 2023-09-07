@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title%}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<h1>Вводим логин и пароль и смотрим, что же будет:</h1>
+<form action="/count_words" method="post">
+    <input type="text" name="text" placeholder="Your text">
+    <input type="submit" value="Отправить">
+</form>
+{% endblock %}}

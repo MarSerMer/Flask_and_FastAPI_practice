@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title%}
+{{ task }}
+{% endblock %}
+
+{% block content %}
+<h1>Вводим два числа и знак, авось посчитает:</h1>
+<form action="/calc" method="post">
+    <input type="text" name="num_1" placeholder="First number">
+    <input type="text" name="num_2" placeholder="Second number">
+    <input type="text" name="sign" placeholder="Sign">
+    <input type="submit" value="Вычислить">
+</form>
+{% endblock %}}
