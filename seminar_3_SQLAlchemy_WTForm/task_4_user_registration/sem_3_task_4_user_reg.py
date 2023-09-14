@@ -15,8 +15,8 @@
 
 from flask import Flask, render_template, flash, request
 from flask_wtf.csrf import CSRFProtect
-from sem_3_task_4_models import db,User
-from task_4_forms import RegistrationForm
+from task_4_user_registration.sem_3_task_4_models import db,User
+from task_4_user_registration.task_4_forms import RegistrationForm
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecretkey'

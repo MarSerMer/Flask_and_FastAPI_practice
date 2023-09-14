@@ -12,7 +12,7 @@ class Book(db.Model):
     authors = db.relationship('Author', secondary='book_author', backref="books", lazy=True)
 
     def __repr__(self):
-        return f'{self.name} {self.year} {self.author.name}'
+        return f'{self.name} {self.year}'
 
 
 class Author(db.Model):
